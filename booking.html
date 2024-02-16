@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+   
+    <link rel="stylesheet" href="booking.css">
+    <title>ARN TRAVELS</title>
+</head>
+<body>
+    <nav class="navbar1">
+        <div class="logimg">
+            <img src="C:\Users\Aryan Navghare\OneDrive\Pictures\Saved Pictures\arn.png" alt="Your Logo">
+        </div>
+        
+    </nav>
+    <div class="container1">
+        <button type="button" onclick="direct()"> choose destination</button>
+        
+        <button type="button" onclick="direct1()"> review</button>
+        <button type="button" onclick="direct2()"> About us</button>
+        
+    </div>
+    
+    
+        
+    <div class="bookcon">
+        <h2>Booking Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email id:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="contact">Contact number:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <br>
+            <button type="button" onclick="nextfile()">Check destination</button>
+               
+        </form>
+        <script>
+            function nextfile(){
+                window.location.href="ex.html";
+            }
+            function direct(){
+                window.location.href="ex.html";
+            }
+            function direct1(){
+                window.location.href="review.html";
+            }
+            function direct2(){
+                window.location.href="about.html";
+            }
+        </script>
+    </div>
+</body>
+</html>
+
+    
+

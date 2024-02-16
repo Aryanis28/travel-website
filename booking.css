@@ -1,0 +1,202 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('C:\\Users\\Aryan Navghare\\OneDrive\\Pictures\\Saved Pictures\\plane7.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.navbar1 {
+    background-color: #000000; 
+    padding: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.logimg {
+    max-width: 100%;
+    height: auto;
+    max-height: 5%;
+}
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #767676;
+    padding: 20px;
+}
+.bookcon {
+
+    padding: 0px;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+
+.bookcon input, .booking-container select {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 0px solid #6dd8ea;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.bookcon button {
+    background-color: #2ecc71;
+    color: #f6fbfd;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.flight-box {
+  width: 300px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  
+  display: inline-block;
+    
+    margin-right: 60px; 
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+
+.flight-box:hover {
+  background-color: #a09d9d;
+}
+
+
+
+.book-button {
+  display: none;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-button1 {
+  display: none;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-success {
+  display: none;
+  margin-top: 15px;
+  color: #4caf50;
+}
+
+.flight-image {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #be6868;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+#result {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 40px 0;
+  text-align: center;
+}
+.navbar img {
+  width: 100px; 
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.container2 {
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.review {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  background-color: #d0c9c9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.review img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  float: left;
+}
+
+.content {
+  background-color: white; 
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  
+}

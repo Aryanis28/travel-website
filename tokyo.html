@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="booking.css">
+    <title>Passenger Price Calculator</title>
+    <style>
+        body{
+            background-image: url('C:\\Users\\Aryan Navghare\\OneDrive\\Pictures\\Saved Pictures\\plane4.jpg');
+        }
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to ARN Booking from Mumbai to Tokyo</h2>
+        <form id="priceCalculator">
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="Passport">Passport:</label>
+                <input type="Passport" id="Passport" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Visa">visa:</label>
+                <input type="visa" id="visa" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="passengers">Number of Passengers:</label>
+                <input type="number" id="passengers" min="1" required>
+            </div>
+            <input type="submit" value="Calculate Price">
+            <button type="button" onclick="obj()">payment</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <div class="navbar">
+        <img src="C:\\Users\\Aryan Navghare\\OneDrive\\Pictures\\Saved Pictures\\airindia.jpg" alt="Image 1">
+        <img src="C:\\Users\\Aryan Navghare\\OneDrive\\Pictures\\Saved Pictures\\airfrance.png" alt="Image 2">
+        <img src="C:\\Users\\Aryan Navghare\\OneDrive\\Pictures\\Saved Pictures\\qatar.jpg" alt="Image 3">
+        <img src="C:\\Users\\Aryan Navghare\\OneDrive\\Pictures\\Saved Pictures\\etihad.png" alt="Image 4">
+        <img src="C:\\Users\\Aryan Navghare\\OneDrive\\Pictures\\Saved Pictures\\indigo.png" alt="Image 4">
+        <img src="C:\\Users\\Aryan Navghare\\OneDrive\\Pictures\\Saved Pictures\\spice.png" alt="Image 4">
+        <img src="C:\\Users\\Aryan Navghare\\OneDrive\\Pictures\\Saved Pictures\\aa.png" alt="Image 4">
+        <img src="C:\\Users\\Aryan Navghare\\OneDrive\\Pictures\\Saved Pictures\\catha.jpg" alt="Image 3">
+        <img src="C:\\Users\\Aryan Navghare\\OneDrive\\Pictures\\Saved Pictures\\vistara.jpg" alt="Image 3">
+
+
+    </div>
+
+
+    <script>
+        document.getElementById('priceCalculator').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var date = document.getElementById('date').value;
+            var passengers = parseInt(document.getElementById('passengers').value);
+            var pricePerPassenger = 64600; 
+            var totalPrice = passengers * pricePerPassenger;
+            document.getElementById('result').innerText = "Total Price for " + passengers + " passengers on " + date + " is Rs." + totalPrice;
+        });
+
+        
+        function obj(){
+            window.location.href="payment.html";
+        }
+    </script>
+</body>
+</html>
